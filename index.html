@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Autocomplete search bar</title>
+  <link rel="shortcut icon" href="./src/search.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/1d92db0cd8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- search box are -->
+  <div class="search-box">
+    <div class="row">
+      <!-- input area -->
+      <input type="text" id="input-box" 
+      placeholder="Search here" autocomplete="off">
+      <!-- search icon -->
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <!-- suggests area -->
+    <div class="result-box">
+      <!-- <ul>
+        <li>Javascript</li>
+        <li>Web development</li>
+      </ul> -->
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

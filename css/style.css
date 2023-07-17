@@ -1,0 +1,81 @@
+/* general */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+:root {
+  --black: #000;
+  --light-black: #555;
+  --gray: #999;
+  --cream: #faf5e4;
+  --green: #d5d8b5;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: var(--black);
+}
+
+/* search container */
+.search-box {
+  width: 600px;
+  background: var(--cream);
+  margin: 200px auto 0;
+  border-radius: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* input area */
+input {
+  flex: 1;
+  height: 50px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: var(--light-black);
+}
+
+/* search icon */
+i .fa-solid {
+  width: 25px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+::placeholder {
+  opacity: .3;
+  color: var(--light-black);
+}
+
+/* suggest area */
+.result-box {
+  max-height: 250px;
+  overflow-y: scroll;
+  border-radius: 20px;
+}
+
+.result-box ul{
+  border-top: 1px solid var(--gray);
+  padding: 15px 10px;
+}
+
+.result-box ul li {
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.result-box ul li:hover {
+  background: var(--green);
+}
